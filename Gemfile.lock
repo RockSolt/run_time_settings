@@ -1,0 +1,17 @@
+PATH
+  remote: .
+  specs:
+    run_time_settings (0.1.0)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  run_time_settings!
+
+BUNDLED WITH
+   2.1.4
