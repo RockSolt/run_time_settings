@@ -1,6 +1,13 @@
 # frozen_string_literal: true
 
 require 'bundler/setup'
+
+require 'simplecov'
+
+SimpleCov.start do
+  add_filter '/spec/'
+end
+
 require 'run_time_settings'
 
 RSpec.configure do |config|
