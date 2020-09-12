@@ -16,6 +16,8 @@ Gem::Specification.new do |spec|
 
   spec.files = Dir['{lib}/**/*', 'MIT-LICENSE', 'Rakefile', 'README.md']
 
+  spec.add_dependency 'activerecord', '>= 4.1.0'
+
   spec.add_development_dependency 'guard', '~> 2.16'
   spec.add_development_dependency 'guard-rspec', '~> 4.7'
   spec.add_development_dependency 'guard-rubocop', '~> 1.3'
