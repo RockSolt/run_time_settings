@@ -13,4 +13,6 @@ Gem::Specification.new do |spec|
   spec.required_ruby_version = Gem::Requirement.new('>= 2.3.0')
 
   spec.files = Dir['{lib}/**/*', 'MIT-LICENSE', 'Rakefile', 'README.md']
+
+  spec.add_development_dependency 'rubocop', '~> 0.90.0'
 end
