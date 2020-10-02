@@ -9,6 +9,7 @@ SimpleCov.start do
 end
 
 require 'run_time_settings'
+require 'database'
 
 RSpec.configure do |config|
   config.disable_monkey_patching!
@@ -18,4 +19,6 @@ RSpec.configure do |config|
   config.expect_with :rspec do |c|
     c.syntax = :expect
   end
+
+  config.after(:example) { RunTimeSettings::Settings.delete_all }
 end

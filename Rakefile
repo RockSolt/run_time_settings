@@ -9,6 +9,7 @@ task :console do
   require 'irb'
   require 'irb/completion'
   require 'run_time_settings'
+  require_relative 'spec/database'
   ARGV.clear
   IRB.start
 end
