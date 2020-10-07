@@ -1,0 +1,20 @@
+name: 'RuboCop'
+
+on: [push]
+
+jobs:
+  lint:
+    name: 'RuboCop'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - name: Set up Ruby 2.7.1
+        uses: actions/setup-ruby@v1
+        with:
+          ruby-version: 2.7.1
+      - name: Install RuboCop
+        run: |
+          gem install bundler --no-document
+          gem install rubocop -v 0.90 --no-document
+      - name: 'RuboCop'
+        run: rubocop
