@@ -1,3 +1,4 @@
+[![Gem Version](https://badge.fury.io/rb/run_time_settings.svg)](https://badge.fury.io/rb/run_time_settings)
 ![RSpec](https://github.com/RockSolt/run_time_settings/workflows/RSpec/badge.svg)
 ![RuboCop](https://github.com/RockSolt/run_time_settings/workflows/RuboCop/badge.svg)
 [![Maintainability](https://api.codeclimate.com/v1/badges/73c3c733ef1f3173fff3/maintainability)](https://codeclimate.com/github/RockSolt/run_time_settings/maintainability)
