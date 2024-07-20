@@ -16,12 +16,12 @@ module RunTimeSettings
       end
 
       def read(namespace, key)
-        value = RunTimeSettings::Settings.find_by(namespace: namespace, key_name: key)&.db_value
+        value = RunTimeSettings::Settings.find_by(namespace:, key_name: key)&.db_value
         type_for(namespace, key).deserialize(value) if value.present?
       end
 
       def write(namespace, key, value)
-        setting = RunTimeSettings::Settings.find_or_initialize_by(namespace: namespace, key_name: key)
+        setting = RunTimeSettings::Settings.find_or_initialize_by(namespace:, key_name: key)
         setting.update!(db_value: type_for(namespace, key).serialize(value))
       end
 

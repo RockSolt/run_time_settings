@@ -1,10 +1,13 @@
-Layout/LineLength:
-  Max: 120
-Metrics/BlockLength:
-  ExcludedMethods: ['describe', 'context']
-
 AllCops:
-  TargetRubyVersion: 2.7.1
+  TargetRubyVersion: 3.3
   Exclude:
     - 'Rakefile'
   NewCops: enable
+
+Gemspec/DevelopmentDependencies:
+  EnforcedStyle: gemspec
+Layout/LineLength:
+  Max: 120
+Metrics/BlockLength:
+  AllowedMethods: ['describe', 'context']
+

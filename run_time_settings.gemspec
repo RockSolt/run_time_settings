@@ -12,18 +12,19 @@ Gem::Specification.new do |spec|
   spec.description   = 'Easily add and manage application-level settings'
   spec.homepage      = 'https://github.com/RockSolt/run_time_settings'
   spec.license       = 'MIT'
-  spec.required_ruby_version = Gem::Requirement.new('>= 2.3.0')
+  spec.required_ruby_version = Gem::Requirement.new('>= 3.3.0')
 
   spec.files = Dir['{lib}/**/*', 'MIT-LICENSE', 'Rakefile', 'README.md']
 
-  spec.add_dependency 'activerecord', '>= 4.1.0'
+  spec.add_dependency 'activerecord', '>= 6.1.0'
 
   spec.add_development_dependency 'guard', '~> 2.16'
   spec.add_development_dependency 'guard-rspec', '~> 4.7'
   spec.add_development_dependency 'guard-rubocop', '~> 1.3'
   spec.add_development_dependency 'rake', '~> 13.0'
   spec.add_development_dependency 'rspec', '~> 3.9'
-  spec.add_development_dependency 'rubocop', '~> 0.90.0'
+  spec.add_development_dependency 'rubocop', '~> 1.65.0'
   spec.add_development_dependency 'simplecov', '~> 0.19'
-  spec.add_development_dependency 'sqlite3', '~> 1.4.2'
+  spec.add_development_dependency 'sqlite3', '~> 1.7'
+  spec.metadata['rubygems_mfa_required'] = 'true'
 end
