@@ -19,6 +19,8 @@ Settings can be declared on any class—a PORO or an ActiveRecord can declare se
 
 ```ruby
 class BatchJob
+  include RunTimeSettings::PersistentAttributes
+
   setting :last_run, :date
   setting :enabled, :boolean, default: false
   setting :percentage, :float
