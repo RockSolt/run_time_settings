@@ -1,13 +1,13 @@
-name: 'RuboCop'
+name: RuboCop
 
 on: [push]
 
 jobs:
   lint:
-    name: 'RuboCop'
+    name: RuboCop
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@v6
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
         with:
@@ -16,5 +16,5 @@ jobs:
         run: |
           gem install bundler --no-document
           gem install rubocop -v 1.65 --no-document
-      - name: 'RuboCop'
+      - name: RuboCop
         run: rubocop
