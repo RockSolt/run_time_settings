@@ -16,7 +16,7 @@ Gem::Specification.new do |spec|
 
   spec.files = Dir['{lib}/**/*', 'MIT-LICENSE', 'Rakefile', 'README.md']
 
-  spec.metadata["rubygems_mfa_required"] = "true"
+  spec.metadata['rubygems_mfa_required'] = 'true'
 
   spec.add_dependency 'activerecord', '>= 6.1.0'
 
