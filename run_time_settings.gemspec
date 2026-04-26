@@ -28,5 +28,4 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'rubocop', '~> 1.65.0'
   spec.add_development_dependency 'simplecov', '~> 0.19'
   spec.add_development_dependency 'sqlite3', '~> 1.7'
-  spec.metadata['rubygems_mfa_required'] = 'true'
 end
